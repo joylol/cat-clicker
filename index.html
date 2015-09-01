@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cat Clicker</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1>Cute Cat Clicker</h1>
+		<h3>Show your love for cute cats. Click on the Cute Cat Photo to see the Clicker Count rise.</h3>
+		<img id="cat" src = "cat.jpg">
+		<h2 id="clicker">0</h2>
+		<script>
+			var cat = document.getElementById('cat');
+			var clickerCount = 0;
+			cat.addEventListener('click', function() {
+				clickerCount = clickerCount + 1;
+				document.getElementById('clicker').innerHTML = clickerCount;
+			}, false);
+		</script>
+	</body>
+</html>
